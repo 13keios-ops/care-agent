@@ -1,0 +1,32 @@
+{
+  "packageName": "app.carecare.agent",
+  "appDescription": "Car care agent that watches vehicle warnings and maintenance and helps the driver act on them with the driver's approval.",
+  "version": "0.2-demo",
+  "invokeWord": "케어 에이전트",
+  "actionCalls": [
+    {
+      "type": "function",
+      "function": {
+        "component": "service",
+        "name": "CHECK_CAR_CARE_STATUS",
+        "description": "Tells the driver the current car care status, including active warnings, remaining range, and the next maintenance due.",
+        "parameters": { "type": "object", "properties": {}, "required": [] }
+      }
+    },
+    {
+      "type": "function",
+      "function": {
+        "component": "activity",
+        "name": "RECORD_MAINTENANCE",
+        "description": "Starts recording a maintenance service the driver just received, which the driver confirms on screen before it is saved.",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "items": { "type": "string", "description": "Maintenance items the driver mentioned, such as engine oil or oil filter." }
+          },
+          "required": []
+        }
+      }
+    }
+  ]
+}

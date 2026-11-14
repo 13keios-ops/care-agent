@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">케어 에이전트</string>
+    <string name="demo_panel_name">케어 상황 체험</string>
+    <!-- 제품명은 미정 (기획 초안 D-10). 가칭 Universal Car Care Agent -->
+</resources>
